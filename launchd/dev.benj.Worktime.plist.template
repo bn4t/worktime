@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>dev.benj.Worktime</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/open</string>
+    <string>-n</string>
+    <string>__WORKTIME_APP_BUNDLE__</string>
+  </array>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>WORKTIME_LIFEDATA_URL</key>
+    <string>http://100.94.53.42:8787</string>
+    <key>WORKTIME_ALLOW_PROD_LIFEDATA</key>
+    <string>1</string>
+  </dict>
+
+  <key>RunAtLoad</key>
+  <true/>
+
+  <key>KeepAlive</key>
+  <false/>
+
+  <key>StandardOutPath</key>
+  <string>__WORKTIME_LOG_DIR__/stdout.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>__WORKTIME_LOG_DIR__/stderr.log</string>
+</dict>
+</plist>
