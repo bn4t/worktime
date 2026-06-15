@@ -7,9 +7,7 @@
 
   <key>ProgramArguments</key>
   <array>
-    <string>/usr/bin/open</string>
-    <string>-n</string>
-    <string>__WORKTIME_APP_BUNDLE__</string>
+    <string>__WORKTIME_APP_EXECUTABLE__</string>
   </array>
 
   <key>EnvironmentVariables</key>
